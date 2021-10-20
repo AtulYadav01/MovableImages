@@ -84,7 +84,12 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
-
+        rotatebutton.setOnTouchListener { v, event ->
+//            newRot = rotation(event)
+//            v.rotation = (v.rotation + (newRot - d))
+            viewTransformation(mainframe, event)
+            true
+        }
 
 
     }
